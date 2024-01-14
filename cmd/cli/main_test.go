@@ -59,18 +59,18 @@ func TestFlagParsing(t *testing.T) {
 			gotTemplateName, gotPathName, gotError := newArgsHandler()
 			// assert
 			if gotTemplateName != tt.wantTemplateName {
-				t.Errorf("ParseArgs TemplateName got %s; want %s",
+				t.Errorf("RunTemplateEngine TemplateName got %s; want %s",
 					tt.wantTemplateName, gotTemplateName)
 			}
 			// assert
 			if gotPathName != tt.wantPathName {
-				t.Errorf("ParseArgs TemplateName got %s; want %s",
+				t.Errorf("RunTemplateEngine TemplateName got %s; want %s",
 					tt.wantPathName, gotPathName)
 			}
 			// assert
 			if gotError != nil {
 				if errors.Is(tt.wantError, gotError) {
-					t.Errorf("ParseArgs TemplateName got %s; want %s",
+					t.Errorf("RunTemplateEngine TemplateName got %s; want %s",
 						tt.wantError, gotError)
 				}
 			}
