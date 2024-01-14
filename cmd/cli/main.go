@@ -8,7 +8,6 @@ import (
 
 func main() {
 	//TODO #16 Add logic to scan template folder
-	//TODO #13 Rename to something better like runprogram or somthing
 	RunTemplateEngine()
 }
 
