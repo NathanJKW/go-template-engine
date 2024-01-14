@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+	//TODO #16 Add logic to scan template folder
+	//TODO #13 Rename to something better like runprogram or somthing
 	ParseArgs()
 }
 
@@ -18,7 +20,8 @@ func ParseArgs() {
 		// if err != nil {
 		// 	fmt.Printf("Error while trying to parse args %s", err)
 		// }
-
+	// TODO #14 add case for list templates
+	// TODO #15 Add case for help
 	default:
 		//return "", "", errors.New("command not found")
 	}
